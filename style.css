@@ -1,0 +1,118 @@
+/*Importing fonts*/
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
+/*Style Brand*/
+#logo{
+    height: 30px;
+}
+
+/*Style Navigation bar*/
+#menu .navbar-inverse{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#menu .nav li{
+    margin-right: 35px;
+    padding: 10px 0;
+}
+#menu .nav li a{
+    font-size: 17px;/*
+    padding-left: 35px;
+    padding-right: 35px;*/
+}
+#menu .nav li:hover{
+    border-bottom: 1px solid rgba(23, 208, 205, 0.7);
+    padding-bottom: 9px;
+}
+
+/*Style header*/
+#header h1{
+    padding-top: 25px;
+    color: white;
+}
+/*Style body by adding background image and set it to cover, add font-family*/
+body{
+    font-family: Arvo, serif;
+    background: url(images/232.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Style Jumbotron*/
+.jumbotron{
+    margin: 0;
+    background: none; /*also we can use transparent*/
+    margin-top: 35px;
+    letter-spacing: 2.5px;
+}
+
+/*limit the width of the icon sections*/
+.container{
+    max-width: 1000px;
+}
+
+/*Style icon section using bootstrap grid system*/
+#textIco{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#textIco p{
+    font-size: 15px;
+}
+#textIco img{
+    height: 100px;
+}
+
+
+/*Style contact button*/
+#conBtn{
+    text-align: center;
+    padding-top: 40px;
+}
+#conBtn .btn-default{
+    background: rgba(23, 208, 205, 0.5);
+    padding: 10px 70px;/*or, width: 250px;*/
+    border-radius: 10px;
+    letter-spacing: 1.3px;
+    color: #fff;
+    font-size: 18px;
+}
+#conBtn .btn-default:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*Style footer*/
+#footer{
+    background: rgba(0, 0, 0, 0.5); 
+    margin-top: 100px;
+}
+#footer p{
+    font-size: 15px;
+    padding: 10px 0;
+    color: white;
+}
+
+/*use media queries to change icon size in small devices*/
+@media (max-width: 768px){
+    #textIco img{
+    height: 70px;
+}
+#header h1{
+    font-size: 45px;
+    padding-top: 10px;
+}
+#textIco h2{
+    font-size: 25px;
+}
+#textIco{
+     padding-top: 0;   
+}
+#textIco p{
+    font-size: 15px;
+}
+#footer{
+    margin-top: 50px
+}
+}
